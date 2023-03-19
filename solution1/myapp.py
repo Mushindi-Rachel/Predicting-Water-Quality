@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-file = open('model.pkl', 'rb')
+file = open('droped_model.pkl', 'rb')
 model = pickle.load(file)
 
 
