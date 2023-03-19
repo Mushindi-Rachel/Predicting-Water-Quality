@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open('./model_dropped.pkl', 'rb'))
+model = pickle.load(open('model_dropped.pkl', 'rb'))
 
 
 def water_potability_prediction(input_data):
