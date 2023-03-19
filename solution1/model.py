@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model_dropped.pkl', 'rb'))
 
 
 input_data = [7.0, 100.0, 200.0, 0.0, 300.0, 0.0, 0.0, 0.0, 5.0]
