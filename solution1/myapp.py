@@ -2,7 +2,7 @@ import joblib
 import streamlit as st
 import numpy as np
 
-model = joblib.load(open('model.pkl', 'rb'))
+model = joblib.load('model.pkl', 'rb')
 
 
 def water_potability_prediction(input_data):
