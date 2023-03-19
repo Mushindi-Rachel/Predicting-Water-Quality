@@ -1,8 +1,12 @@
 import joblib
 import streamlit as st
 import numpy as np
+import os
 
-model = joblib.load('model.pkl', 'rb')
+location = ''
+fullpath = os.path.join(location, 'model.pkl')
+
+model = joblib.load(open(fullpath, 'rb'))
 
 
 def water_potability_prediction(input_data):
