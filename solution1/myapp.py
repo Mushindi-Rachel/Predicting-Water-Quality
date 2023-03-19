@@ -1,12 +1,9 @@
-import joblib
 import streamlit as st
+import pickle
 import numpy as np
-import os
 
-location = ''
-fullpath = os.path.join(location, 'model.pkl')
-
-model = joblib.load(open(fullpath, 'rb'))
+file = open('model.pkl', 'rb')
+model = pickle.load(file)
 
 
 def water_potability_prediction(input_data):
